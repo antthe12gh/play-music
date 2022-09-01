@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    background-image: linear-gradient(purple, pink);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#song{
+    border-radius: 7%;
+    width: 60vh;
+    height: 60vh;
+    background-color: rgb(225, 255, 255);
+    text-align: center;
+    position: relative;
+}
+
+
+#song img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 30px auto;
+}
+#song p{
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#control{
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    position: relative;
+    top: 30px;
+}
+
+#song-time{
+    width: 80%;
+    height: 3px;
+    background-color: RGB(181,183,184);
+    position: absolute;
+    left: 10%;
+    margin-top: 5px;
+    border: none;
+}
+
+#song-time:hover{
+    height: 4px;
+    cursor: pointer;
+}
+
+#song-time button:hover{
+    height: 8px;
+    cursor: pointer;
+
+}
+#song-time button{
+    height: 5px;
+    width: 5px;
+    left: 0px;
+    position: inherit;
+    background-color: rgb(241, 13, 226);
+    border: none;
+    top: -1px;
+}
+.songs-song {
+    display: flex;
+    margin: 15px;   
+    background-color: #fff;
+    top: 0;
+    display: flex;
+    font-weight: bold;
+    position: relative;
+    border: 1px solid red;
+    border-radius: 20px;
+    transition: top ease 0.3s;
+    
+}
+.songs-song:hover{
+    top: -10px;
+}
+
+
+.songs-song img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+#songs{
+    width: 60vh;
+    height: 60vh;
+    overflow-y: scroll; /* thanh cuộn */
+}
+.red-color{
+    color: rgb(255, 0, 0);
+}
+.active{
+    background-color: rgb(255, 0, 230);
+}
+
+@media only screen and (max-width: 40.1875em) {
+    .songs-song h3{
+        margin-top: 3px;
+        font-size: xx-small;
+    }
+    .songs-song p{
+        font-size: xx-small;       
+    }
+    .songs-song img {
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    .songs-song{
+        margin: 8px;
+    }
+    #song img{
+        width: 130px;
+        height: 130px;
+    }
+    #songs{
+        width: 40vh;
+        height: 40vh;
+        overflow-y: scroll; /* thanh cuộn */
+    }
+    #song{
+        width: 40vh;
+        width: 40vh;
+    }
+
+    
+  }
